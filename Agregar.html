@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<h1 style="text-align: center;">Agregar Una Nueva tarea</h1>
+<body>
+    <form id="frmTareas">
+    <input type="number" id="Id" placeholder="Numero", required>
+    <input type="text"id="Nombre" placeholder="Nombre", required>
+    <input type="text" id="asunto"placeholder="Asunto", required>
+    <button type="submit">Agregar Tarea</button>
+    <a href="index.html" class="boton">⬅ Volver</a>
+</form>
+
+<table id="tblTareas">
+    <thead>
+        <tr>
+            <th>Numero</th>
+            <th>Nombre </th>
+            <th>Asunto</th>
+            <th>Accion</th>
+        </tr>
+    </thead>
+    <tbody ></tbody>
+<script src="js/idb.min.js"></script>
+<script type="module" src="js/Agendar.indexed.js"></script>
+</body>
+</html>

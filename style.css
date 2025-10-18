@@ -1,0 +1,116 @@
+/* ---------- RESET ---------- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+    line-height: 1.55;
+}
+
+/* ---------- NAV ---------- */
+nav {
+    background: #075041;
+    box-shadow: 0 2px 4px rgba(0,0,0,.12);
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+}
+nav a {
+    color: #fff;
+    font-weight: 600;
+    transition: opacity .2s;
+}
+nav a:hover { opacity: .8; }
+
+/* ---------- HEADER ---------- */
+header {
+    padding: 2rem;
+    text-align: center;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+}
+header h1 { font-size: 1.8rem; color: #008B6F; }
+
+/* ---------- TABLAS ---------- */
+table {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+thead { background: #025242; color: #fff; }
+th, td { padding: .9rem 1.2rem; text-align: left; }
+tbody tr:nth-child(even) { background: #f8f9fa; }
+tbody tr:hover { background: #e9ecef; }
+
+/* ---------- FORM ---------- */
+#frmTareas {
+    width: 90%;
+    max-width: 500px;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+#frmTareas input {
+    padding: .75rem 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+#frmTareas input:focus {
+    outline: none;
+    border-color: #008B6F;
+    box-shadow: 0 0 0 3px rgba(0,139,111,.25);
+}
+#frmTareas button {
+    padding: .75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: #025847;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background .2s;
+}
+#frmTareas button:hover { background: #006e5a; }
+
+.boton {
+    display: inline-block;
+    margin: 2rem auto 0;
+    padding: .6rem 1.2rem;
+    background: #6c757d;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 600}
+    /* ---------- FOOTER ---------- */
+footer {
+  background: var(--txt);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

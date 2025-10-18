@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de tareas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+    <ul>
+        <li><a href="index.html">Tareas Pendientes</a></li>
+        <li><a href="Agregar.html">Agregar tarea </a></li>
+    </ul>
+</nav>
+<header>
+    <h1 style="text-align: center;">Tareas Pendientes</h1>
+    <img src="img/planer..jpg">
+</header>   
+<table id="tblPendientes">
+    <thead>
+        <tr>
+            <th> Numero</th>
+            <th>Nombre </th>
+            <th>Asunto</th>
+        </tr>
+    </thead>
+    <tbody ></tbody>
+</table>
+<script src="js/idb.min.js"></script>
+<script type="module" src="js/pendientes.indexed.js"></script>
+
+<!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer__content">
+            <p>© <span id="year"></span> Rebeca Campos Agenda Virtual</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
